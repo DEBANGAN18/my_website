@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animated Drop-down Menu CSS3</title>
+    <link rel="stylesheet" href="CSS_ATTRIBUTES/drp.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+    <nav>
+      <label for="btn" class="button"><center>
+        <span class="fas fa-caret-down"></span></center>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul class="menu">
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- This code used to rotate drop icon(-180deg).. -->
+    <script>
+    $('nav .button').click(function(){
+      $('nav .button span').toggleClass("rotate");
+    });
+      $('nav ul li .first').click(function(){
+        $('nav ul li .first span').toggleClass("rotate");
+      });
+      $('nav ul li .second').click(function(){
+        $('nav ul li .second span').toggleClass("rotate");
+      });
+    </script>
+
+  </body>
+</html>
